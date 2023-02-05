@@ -8,7 +8,7 @@ export default function Contests() {
   return (
     <div className="container">
       <Head>
-        <title>Bad Movie Night</title>
+        <title>Good Movie Night</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

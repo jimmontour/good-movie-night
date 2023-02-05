@@ -4,13 +4,14 @@ export default function Stream() {
   return (
     <>
       <div className={styles.stream}>
-        <iframe
-          src="https://vk.com/video_ext.php?oid=763833768&id=456239035&hash=7f9066210e4586be&hd=2"
-          className={styles.video}
-          allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+       <iframe
+         src="https://www.youtube.com/embed/RwOhdPsZA74"
+         className={styles.video}
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         allowfullscreen>
+       </iframe>
         <div className={styles.rightBar}>
           <iframe
             src="https://organizations.minnit.chat/914894370329247/Main?embed&nickname="

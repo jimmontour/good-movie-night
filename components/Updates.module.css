@@ -1,0 +1,11 @@
+.updates {
+  background-color: black;
+  display: grid;
+  grid-template-columns: space-around;
+  padding: 0 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.description {
+  font-size: 0.8rem;
+}

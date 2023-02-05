@@ -1,0 +1,17 @@
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+.nav li:hover {
+  color: #ad7e08;
+}
+
+@media (max-width: 650px) {
+  .nav {
+    visibility: hidden;
+  }
+}

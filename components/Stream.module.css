@@ -1,0 +1,47 @@
+.stream {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.chat {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.rightBar {
+  background-color: black;
+}
+
+/* iPads (landscape) ----------- */
+@media (max-width: 1221px) {
+  .stream {
+    display: block;
+  }
+  .video {
+    width: 100vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .chat {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 650px) {
+  .video {
+    height: 30vh;
+  }
+  .chat {
+    height: 40vh;
+  }
+}

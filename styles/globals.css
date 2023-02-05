@@ -1,35 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 * {
   box-sizing: border-box;
 }
 
-main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+h1,
+h2,
+h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #d7a51f;
 }
 
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+a {
+  color: #d7a51f;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #f7c547;
+  transition: 0.3s;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem #000);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #f7c547;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding: 0;
 }
 
 .container {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 20fr 1fr;
+}
+
+.log {
+  width: 80%;
+  height: 60vh;
+}
+
+.schedule {
+  width: 80vw;
+  height: 60vh;
+}
+
+.content {
+  margin: 3rem auto;
+}
+
+.log {
+  width: 90vw;
+}
+
+.movie {
+  border: 1px solid #d7a51f;
+  border-radius: 15px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 25vw;
+}
+
+.movie img {
+  width: 100%;
+  height: 10rem;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* iPads (landscape) ----------- */
+@media (max-width: 1221px) {
+  .movies-container {
+    display: block;
+  }
+  .movie {
+    width: 40%;
+    margin: 0 auto 2rem auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .movie {
+    width: 90%;
+  }
 }

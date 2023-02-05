@@ -1,0 +1,42 @@
+.logo {
+  width: 5rem;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 0.75rem #d71f1f);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+}
+
+.topButtons {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 2px solid #dbab48;
+  transition: 0.3s;
+}
+
+.topButtons:hover {
+  background-color: #d71f1f;
+  color: #dbab48;
+  border: 2px solid #dbab48;
+}
+
+@media (max-width: 650px) {
+  .topButtons {
+    visibility: hidden;
+  }
+  .header {
+    height: 20vh;
+  }
+  .logo {
+    width: 25vw;
+  }
+}

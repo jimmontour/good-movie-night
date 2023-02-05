@@ -1,23 +1,24 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Stream from '@components/Stream'
+import Updates from '@components/Updates'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Bad Movie Night</title>
         <link rel="icon" href="/favicon.ico" />
+
       </Head>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+      <div className="container">
+        <Header />
+        <Stream />
+        <Footer />
 
-      <Footer />
+      </div>
     </div>
-  )
+  );
 }

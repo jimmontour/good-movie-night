@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "cypress": "^10.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "next": "^12.1.5",
+    "passport": "^0.6.0",
+    "passport-patreon": "^1.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3"
